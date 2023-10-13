@@ -1,20 +1,56 @@
-# Onelink
+# Print Yourself
 
-Onelink is an experimental link-in-bio tool, where the data lives in the URL. 
+Print Yourself is an experimental link-in-bio tool, where the data lives in the URL.
 
-![Screenshot2023-01-30 at 00 40 04@2x](https://user-images.githubusercontent.com/15716057/215350057-5fbf81f5-5f33-4cbe-98ba-0ced8b3c09c8.jpg)
+The idea is to make it easy to share links to your social media profiles, and other links, without having to use a third party service.
 
-> **Note**
-> Since the URL can become very long, it's better to use a link shortener like https://dub.sh
+The data is stored in the URL, and can be shared as a link.
 
-Here's a demo page
-https://onelink-nu.vercel.app/1?data=eyJuIjoiSm9obiBTbm93IiwiZCI6IknigJltIEpvaG4gU25vdywgdGhlIGtpbmcgaW4gdGhlIG5vcnRoLiBJIGtub3cgTm90aGluZy4iLCJpIjoiaHR0cHM6Ly9pLmluc2lkZXIuY29tLzU2NzQzZmFkNzJmMmMxMmEwMDhiNmNjMCIsImYiOiJodHRwczovL3d3dy5mYWNlYm9vay5jb20vam9obl9zbm93IiwidCI6Imh0dHBzOi8vdHdpdHRlci5jb20vam9obl9zbm93IiwiaWciOiJodHRwczovL3d3dy5pbnN0YWdyYW0uY29tL2pvaG5fc25vdyIsImUiOiJtYWlsQGpvaG5fc25vdy5jYyIsImdoIjoiaHR0cHM6Ly9naXRodWIuY29tL2pvaG5fc25vdyIsInRnIjoiaHR0cHM6Ly90Lm1lL2pvaG5fc25vdyIsInciOiIrOTE4ODg4ODg4ODg4IiwieSI6Imh0dHBzOi8veW91dHViZS5jb20vQGpvaG5fc25vdyIsImwiOiJodHRwczovL2xpbmtlZGluLmNvbS9qb2huX3Nub3ciLCJscyI6W3sibCI6Ik15IFdlYnNpdGUiLCJpIjoicGg6Z2xvYmUtZHVvdG9uZSIsInUiOiJodHRwczovL2V4YW1wbGUuY29tIn0seyJsIjoiQW1hem9uIHdpc2hsaXN0IiwiaSI6ImFudC1kZXNpZ246YW1hem9uLW91dGxpbmVkIiwidSI6Imh0dHBzOi8vYW1hem9uLmluIn0seyJsIjoiUmVhY3QgSlMgY291cnNlIiwiaSI6Imdyb21tZXQtaWNvbnM6cmVhY3RqcyIsInUiOiJodHRwczovL3JlYWN0anMub3JnLyJ9LHsibCI6IkRvbmF0ZSBmb3Igb3VyIGNhdXNlIiwiaSI6Imljb25vaXI6ZG9uYXRlIiwidSI6Imh0dHBzOi8vd2hvLmludCJ9LHsibCI6IkRvd25sb2FkIG15IHJlc3VtZSIsImkiOiJwaDpmaWxlLXBkZiIsInUiOiJodHRwczovL2dvb2dsZS5jb20ifV19
+## How to use
 
-The data is converted to a base 64 string which we onelink uses as a query parameter. I have tried to reduce the json keys to be as small as possible
+1. Go to [print-yourself.vercel.app](https://print-yourself.vercel.app)
+2. Add your links
+3. Share the link
 
-Roadmap.
-1. Templates - make different templates, the `/1` after the host is basically a template here.
-2. Refactor code - a lot of repeated boilerplate code is added here - refactor it properly.
+## How it works
+
+The data is stored in the URL, and can be shared as a link.
+
+The data is stored in the URL as a query string, and the data is encoded as a base64 string.
+
+## Roadmap
+
+This is a list of things that I want to add to Print Yourself, but haven't had the time to do yet.
+
+1. Add a way to save the data to a file, so that it can be shared as a file.
+2. Add a way to save the data to a QR code, so that it can be shared as a QR code.
+3. Add a way to save the data to a PNG, so that it can be shared as a PNG.
+4. Add a way to save the data to a PDF, so that it can be shared as a PDF.
+5. Add a way to save the data to a SVG, so that it can be shared as a SVG.
+6. Add a way to save the data to a JSON file, so that it can be shared as a JSON file.
+7. Add a way to save the data to a YAML file, so that it can be shared as a YAML file.
+8. Add a way to save the data to a TOML file, so that it can be shared as a TOML file.
+9. Add a way to save the data to a CSV file, so that it can be shared as a CSV file.
+10. Add a way to save the data to a XML file, so that it can be shared as a XML file.
+11. Add a way to save the data to a HTML file, so that it can be shared as a HTML file.
+12. Add a way to save the data to a Markdown file, so that it can be shared as a Markdown file.
+
+## Contributing
+
+If you want to contribute to Print Yourself, you can do so by forking the repository, and then making a pull request.
+
+If you want to contribute, but don't know what to do, here are some things that you can do:
+
+1. Add a new feature from the
+2. Fix a bug from the
+3. Add a new feature from the
+4. Fix a bug from the
+5. Add a new feature from the
+6. Fix a bug from the
+
+## How to contribute
+
+If you want to contribute to Print Yourself, you can do so by forking the repository, and then making a pull request.
 
 ## Setup locally
 
