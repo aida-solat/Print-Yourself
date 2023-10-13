@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen grid grid-cols-3 divide-x">
-    <div class="col-span-2 h-screen flex flex-col bg-slate-100">
+    <div class="col-span-2 h-screen flex flex-col bg-orange-50">
       <div class="flex-1 overflow-y-auto p-8">
         <app-form-profile
           v-model:name="data.n"
@@ -25,14 +25,14 @@
       <div class="border-t bg-white flex items-center">
         <button
           @click="prefillDemoData"
-          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
+          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-orange-500"
         >
           <span> Add demo data </span>
           <icon name="mdi:code-json" class="h-4 w-4" />
         </button>
         <button
           @click="publish"
-          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
+          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-orange-500"
         >
           <span> Publish </span>
           <icon name="ph:paper-plane-tilt-bold" class="h-4 w-4" />
@@ -40,21 +40,24 @@
         <a
           href="https://github.com/aida-solat/Print-Yourself"
           target="_blank"
-          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-slate-700"
+          class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-orange-500"
         >
           <span> Github </span>
           <icon name="mdi:github" class="h-4 w-4" />
         </a>
+          <a
+            href="https://www.linkedin.com/in/aida-solat/"
+            target="_blank"
+            class="h-12 flex items-center space-x-2 px-4 border-r text-xs font-medium bg-white text-orange-500"
+          >
+            <span> Made by Soli </span>
+            <icon name="uiw:smile" class="h-4 w-4" />
+          </a>
+       
       </div>
     </div>
     <app-form-preview :data="data" />
-    <a
-      href="https://www.linkedin.com/in/aida-solat/"
-      target="_blank"
-      class="absolute bottom-0 right-0 bg-white rounded-tl-lg shadow px-4 py-1 font-medium text-sm text-gray-500"
-    >
-      Made by Soli
-    </a>
+    
   </div>
 </template>
 
@@ -78,18 +81,18 @@ const data = ref({
 
 const prefillDemoData = () => {
   data.value = {
-    n: "John Snow",
-    d: "I’m John Snow, the king in the north. I know Nothing.",
-    i: "https://i.insider.com/56743fad72f2c12a008b6cc0",
-    f: "https://www.facebook.com/john_snow",
-    t: "https://twitter.com/john_snow",
-    ig: "https://www.instagram.com/john_snow",
-    e: "mail@john_snow.cc",
-    gh: "https://github.com/john_snow",
-    tg: "https://t.me/john_snow",
-    w: "+918888888888",
-    y: "https://youtube.com/@john_snow",
-    l: "https://linkedin.com/john_snow",
+    n: "Aida Solat",
+    d: "I’m a Full-stack JavaScript Typescript Developer",
+    i: "./profile.jpeg",
+    f: "https://www.facebook.com/",
+    t: "https://twitter.com/",
+    ig: "https://www.instagram.com/",
+    e: "aidasolatco@gmail.com",
+    gh: "https://github.com/aida-solat",
+    tg: "https://t.me/sysdevida",
+    w: "+4366565123484",
+    y: "https://youtube.com/",
+    l: "https://linkedin.com/aida-solat",
     ls: [
       {
         l: "My Website",
@@ -114,7 +117,7 @@ const prefillDemoData = () => {
       {
         l: "Download my resume",
         i: "ph:file-pdf",
-        u: "https://google.com",
+        u: "/aida-solat.pdf",
       },
     ],
   };

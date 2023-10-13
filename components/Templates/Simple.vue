@@ -3,14 +3,14 @@
     <div class="text-center">
       <div
         v-if="acc.i"
-        class="h-20 w-20 rounded-full overflow-hidden ring ring-slate-200 mx-auto"
+        class="h-20 w-20 rounded-full overflow-hidden ring ring-orange-200 mx-auto"
       >
         <img :src="acc.i" alt="name" class="h-full w-full object-cover" />
       </div>
-      <h1 v-if="acc.n" class="text-2xl font-bold mt-4 text-slate-800">
+      <h1 v-if="acc.n" class="text-2xl font-bold mt-4 text-orange-800">
         {{ acc.n }}
       </h1>
-      <p v-if="acc.d" class="text-sm mt-2 text-slate-600">
+      <p v-if="acc.d" class="text-sm mt-2 text-orange-600">
         {{ acc.d }}
       </p>
     </div>
